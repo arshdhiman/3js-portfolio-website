@@ -38,7 +38,7 @@ export function ThemeToggle() {
         variant="outline"
         size="icon"
         onClick={toggleTheme}
-        className="bg-background/80 backdrop-blur-sm border-border/50 hover:bg-accent/80 transition-all duration-300 animate-bounce-slow"
+        className="bg-background/80 backdrop-blur-sm border-border/50 hover:bg-accent/80 transition-all"
       >
         <motion.div
           key={theme}

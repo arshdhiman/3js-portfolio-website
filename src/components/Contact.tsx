@@ -33,7 +33,7 @@ const Contact = () => {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.5 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
@@ -50,7 +50,7 @@ const Contact = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.5 }}
             viewport={{ once: true }}
             className="space-y-8"
           >
@@ -73,7 +73,7 @@ const Contact = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.02, y: -5 }}
-                  className="flex items-center gap-4 bg-card/90 backdrop-blur-sm p-6 rounded-2xl border border-border hover:bg-card hover:border-border/80 hover:shadow-xl transition-all duration-300 animate-bounce-slow"
+                  className="flex items-center gap-4 bg-card/90 backdrop-blur-sm p-6 rounded-2xl border border-border hover:bg-card hover:border-border/80 hover:shadow-xl transition-all  animate-bounce-slow"
                 >
                   <div className="text-primary flex-shrink-0">
                     {item.icon}
@@ -91,9 +91,9 @@ const Contact = () => {
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="bg-card/90 backdrop-blur-sm p-8 rounded-2xl border border-border hover:bg-card hover:shadow-xl transition-all duration-300"
+            className="bg-card/90 backdrop-blur-sm p-8 rounded-2xl border border-border hover:bg-card hover:shadow-xl transition-all "
           >
             <h3 className="text-2xl font-bold text-foreground mb-6">Send a Message</h3>
             
@@ -106,7 +106,7 @@ const Contact = () => {
                   <Input 
                     type="text" 
                     placeholder="Your name"
-                    className="bg-background/50 border-border text-foreground placeholder:text-muted-foreground focus:border-primary hover:border-border/80 transition-all duration-300"
+                    className="bg-background/50 border-border text-foreground placeholder:text-muted-foreground focus:border-primary hover:border-border/80 transition-all "
                   />
                 </div>
                 <div>
@@ -116,7 +116,7 @@ const Contact = () => {
                   <Input 
                     type="email" 
                     placeholder="your.email@example.com"
-                    className="bg-background/50 border-border text-foreground placeholder:text-muted-foreground focus:border-primary hover:border-border/80 transition-all duration-300"
+                    className="bg-background/50 border-border text-foreground placeholder:text-muted-foreground focus:border-primary hover:border-border/80 transition-all "
                   />
                 </div>
               </div>
@@ -128,7 +128,7 @@ const Contact = () => {
                 <Input 
                   type="text" 
                   placeholder="Project discussion"
-                  className="bg-background/50 border-border text-foreground placeholder:text-muted-foreground focus:border-primary hover:border-border/80 transition-all duration-300"
+                  className="bg-background/50 border-border text-foreground placeholder:text-muted-foreground focus:border-primary hover:border-border/80 transition-all "
                 />
               </div>
               
@@ -139,7 +139,7 @@ const Contact = () => {
                 <Textarea 
                   placeholder="Tell me about your project..."
                   rows={6}
-                  className="bg-background/50 border-border text-foreground placeholder:text-muted-foreground focus:border-primary hover:border-border/80 resize-none transition-all duration-300"
+                  className="bg-background/50 border-border text-foreground placeholder:text-muted-foreground focus:border-primary hover:border-border/80 resize-none transition-all "
                 />
               </div>
               
@@ -149,7 +149,7 @@ const Contact = () => {
               >
                 <Button 
                   type="submit"
-                  className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-medium py-3 rounded-lg transition-all duration-300 animate-bounce-slow"
+                  className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-medium py-3 rounded-lg transition-all "
                 >
                   <Send className="w-5 h-5 mr-2" />
                   Send Message
@@ -162,7 +162,7 @@ const Contact = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
           viewport={{ once: true }}
           className="text-center mt-16 pt-12 border-t border-border"
         >

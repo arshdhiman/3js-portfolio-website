@@ -45,7 +45,7 @@ const Projects = () => {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.5 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
@@ -63,10 +63,10 @@ const Projects = () => {
               key={index}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
               viewport={{ once: true }}
               whileHover={{ y: -10, scale: 1.02 }}
-              className="bg-card/90 backdrop-blur-sm rounded-2xl border border-border hover:bg-card hover:border-border/80 hover:shadow-2xl transition-all duration-500"
+              className="bg-card/90 backdrop-blur-sm rounded-2xl border border-border hover:bg-card hover:border-border/80 hover:shadow-2xl transition-all"
             >
               <div className={`h-2 bg-gradient-to-r ${project.color}`}></div>
               
@@ -81,7 +81,7 @@ const Projects = () => {
                       <motion.span
                         key={techIndex}
                         whileHover={{ scale: 1.1, y: -2 }}
-                        className="bg-primary/20 hover:bg-primary/30 px-3 py-1 rounded-full text-xs text-foreground border border-primary/30 hover:border-primary/50 transition-all duration-300 cursor-default animate-bounce-slow"
+                        className="bg-primary/20 hover:bg-primary/30 px-3 py-1 rounded-full text-xs text-foreground border border-primary/30 hover:border-primary/50 transition-all  cursor-default"
                       >
                         {tech}
                       </motion.span>
@@ -105,7 +105,7 @@ const Projects = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex items-center gap-2 bg-secondary/80 hover:bg-secondary px-4 py-2 rounded-lg text-sm text-foreground border border-border hover:border-border/80 transition-all duration-300 animate-bounce-slow"
+                    className="flex items-center gap-2 bg-secondary/80 hover:bg-secondary px-4 py-2 rounded-lg text-sm text-foreground border border-border hover:border-border/80 transition-all  animate-bounce-slow"
                   >
                     <Github size={16} />
                     Code
@@ -113,7 +113,7 @@ const Projects = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex items-center gap-2 bg-primary/90 hover:bg-primary px-4 py-2 rounded-lg text-sm text-primary-foreground transition-all duration-300 animate-bounce-slow"
+                    className="flex items-center gap-2 bg-primary/90 hover:bg-primary px-4 py-2 rounded-lg text-sm text-primary-foreground transition-all  animate-bounce-slow"
                   >
                     <ExternalLink size={16} />
                     Demo

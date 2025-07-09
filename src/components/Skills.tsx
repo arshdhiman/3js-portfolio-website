@@ -27,7 +27,7 @@ const Skills = () => {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.5 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
@@ -45,10 +45,10 @@ const Skills = () => {
               key={categoryIndex}
               initial={{ opacity: 0, x: categoryIndex % 2 === 0 ? -50 : 50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: categoryIndex * 0.2 }}
+              transition={{ duration: 0.5, delay: categoryIndex * 0.2 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.02, y: -5 }}
-              className="bg-card/80 backdrop-blur-sm p-8 rounded-2xl border border-border/50 hover:bg-card/90 hover:border-border hover:shadow-2xl transition-all duration-500"
+              className="bg-card/80 backdrop-blur-sm p-8 rounded-2xl border border-border/50 hover:bg-card/90 hover:border-border hover:shadow-2xl transition-all"
             >
               <h3 className="text-2xl font-bold text-foreground mb-6">{category.title}</h3>
               <div className="flex flex-wrap gap-3">
@@ -57,10 +57,10 @@ const Skills = () => {
                     key={skillIndex}
                     initial={{ opacity: 0, scale: 0 }}
                     whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.4, delay: (categoryIndex * 0.2) + (skillIndex * 0.1) }}
+                    transition={{ duration: 0.5, delay: (categoryIndex * 0.2) + (skillIndex * 0.1) }}
                     viewport={{ once: true }}
                     whileHover={{ scale: 1.1, y: -2 }}
-                    className="bg-primary/20 hover:bg-primary/30 px-4 py-2 rounded-full text-sm text-foreground border border-primary/30 hover:border-primary/50 transition-all duration-300 cursor-default shadow-lg hover:shadow-xl"
+                    className="bg-primary/20 hover:bg-primary/30 px-4 py-2 rounded-full text-sm text-foreground border border-primary/30 hover:border-primary/50 transition-all cursor-default shadow-lg hover:shadow-xl"
                   >
                     {skill}
                   </motion.span>
