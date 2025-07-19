@@ -137,8 +137,8 @@ const Hero = () => {
             <Linkedin size={24} />
           </motion.a>
           <motion.a
-            href="/Arshpreet_singh_full_stach_resume.pdf"
-            download="Arshpreet_Singh_Dhiman_Resume.pdf"
+            href="/Arshpreet_singh_full_stack_resume.pdf"
+            download="Arshpreet_singh_full_stack_resume.pdf"
             className="p-4 bg-primary/20 backdrop-blur-sm rounded-full text-primary border border-primary/30 hover:bg-primary/30 hover:border-primary/50 transition-all shadow-lg hover:shadow-xl"
             style={{ animationDelay: "0.4s" }}
             whileHover={{ scale: 1.1, rotate: 5 }}
